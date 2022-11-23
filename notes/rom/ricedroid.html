@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="../../assets/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="../../assets/css/footer.css">
+    <title>Ginkgo's Port - RiceDroid 5</title>
+</head>
+<body>
+     <!--nav sections start-->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark text-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><span style="color: red;">Ginkgo's</span> Port</a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../../">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../releases.html">Menu</a></li></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Lainnya
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../../faq">Bantuan</a></li>
+                <li><a class="dropdown-item" href="../../about">Tentang Kami</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--nav sections end-->
+    
+    <!--first layout start-->
+  <div class="container">
+    <div class="row mt-4 align-items-center text-center">
+        <div class="col-12">
+            <h2><span style="color: red;">RiceDroid 5.0</span> | HaloHalo</h2>
+            <img src="../../assets/pict/ricedroid5.jpg" alt="" class="img-fluid rounded" style="width: 40rem ;">
+        </div>
+    </div>
+    <div class="mt-4 row row-cols-1 row-cols-md-2">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Changelog</h5>
+            <h5 class="card-title fw-light">Device Changelog</h5>
+            <p class="card-text">
+              <ul class="fw-light">
+                  <li>Upstreamed kernel to v4.14.246 (android-4.14-stable)</li>
+                  <li>Updated MIUI blobs to V12.0.2.0.RCOMIXM</li>
+                  <li>Fixed random reboots during widevine L1 playback</li>
+                  <li>Removed widevine firmware hack, R firmware is mandatory</li>
+                  <li>Boost I/O during bootup to improve boot speed</li>
+                  <li>Boost CPU during wake for faster faceunlock</li>
+                  <li>Increased default f2fs checkpoint interval</li>
+                  <li>Increased hispeed freq for big cluster</li>
+                  <li>Disabled conservative PL boost</li>
+                  <li>Reverted AOSP's old VM settings tweaks</li>
+                  <li>Misc optimizations and fixes in kernel</li>
+                  <li>Fixed safetynet CTS profile for all</li>
+                  <li>Added LCD HBM and CABC in XiaomiParts</li>
+                  <li>Added missing qti_whitelist sysconfig</li>
+                  <li>Disabled useless cnss-diag service</li>
+                  <li>Improved schedutil governor ratelimits</li>
+                  <li>Updated clear speaker audio from MIUI12</li>
+                  <li>Removed notification and battery LED settings on willow</li>
+                  <li>Removed TM symbol in kernel name (required by some apps)</li>
+                  <li>Merged LA.UM.9.11.r1-04700.02 CAF tag in kernel</li>
+                  <li>Fixed IR sensor</li>
+                  <li>Enabled idle_state mechanism</li>
+                  <li>Checkout audio policy config from MIUI Global Stable</li>
+                  <li>Implemented vibration control under Sound settings</li>
+                </ul>
+              Dan source changelog bisa diakses <a href="https://raw.githubusercontent.com/RiceDroid/android_vendor_rice/twelve/prebuilt/common/etc/Changelog.txt">disini</a>
+              </p>
+          </div>
+        </div>
+      </div>
+      <div class=" col-12">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-subtitle mb-2 text-muted">Update pada 28/08/'22</h5>
+            <p class="card-text text-muted fw-light">
+              Pengembang <i>(Telegram)</i> 
+              <ul class="text-muted fw-light">
+                <li>@Razs_19</li>
+              </ul>
+              <p class="text-muted fw-light">Credit  <i>(Telegram)</i></p>
+              <ul class="text-muted fw-light">
+                <li>@ghostrider_reborn for resources</li>
+                <li>@k_shizaki for testing</li>
+                <li>@OptimussPriime</li>
+              </ul>
+              <h5 class="card-subtitle mb-2 text-muted">Download Ricedroid 5.0 Android 12L Versi GApps</h5>
+              <p class="card-text text-muted fw-light">
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#linkricedroid">
+                  Download
+                </button>
+              </p>
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--first layout end-->
+    
+    <!--start modal-->
+      <div class="modal fade" id="linkricedroid" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="linkricedroidLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="linkricedroidLabel">Download</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Ini akan mengarahkan ke link download..
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+              <a href="https://drive.google.com/uc?id=1hXnOZRB9bpXPuwfZo8DOhqEEIde7bHS1&export=download" target="_blank" class="btn btn-danger">Download</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--end modal-->
+
+  <!--footer start-->
+  <footer class="py-3 mt-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="../../" class="nav-link px-2 text-muted">Beranda</a></li>
+      <li class="nav-item"><a href="../../faq/" class="nav-link px-2 text-muted">Bantuan</a></li>
+      <li class="nav-item"><a href="../../about/" class="nav-link px-2 text-muted">Tentang Kami</a></li>
+    </ul>
+    <p class="text-center text-muted">&copy; 2022, Ginkgo's Port</p>
+  </footer>
+  <!--footer end-->
+    </div>
+    
+    <script src="../../assets/js/bootstrap.bundle.js"></script>
+    <script src="../../assets/js/jquery.min.js"></script>
+</body>
+</html>

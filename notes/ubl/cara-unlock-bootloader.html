@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="../../assets/css/all.min.css">
+    <link type="text/css" rel="stylesheet" href="../../assets/css/footer.css">
+    <title>Ginkgo's Port - Cara Install TWRP</title>
+</head>
+<body>
+     <!--nav sections start-->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark text-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><span style="color: red;">Ginkgo's</span> Port</a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../../index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../releases.html">Menu</a></li></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Lainnya
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../../faq">Bantuan</a></li>
+                <li><a class="dropdown-item" href="../../about">Tentang Kami</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--nav sections end-->
+    
+    <!--first layout start-->
+    <div class="container">
+      <div class="row mt-4 align-items-center text-center">
+          <div class="col-12">
+              <h2>Cara <span style="color: red;">Unlock Bootloader</span></h2>
+              <img src="../../assets/pict/ubl.jpg" alt="" class="img-fluid" style="width: 35rem;">
+          </div>
+      </div>
+      <div class="mt-4 row">
+        <p class="fw-bold">Pertama, pastikan perangkat Anda bisa dibuka.</p>
+        <ul class="fw-light">
+            <li>Perangkat Anda berfungsi normal dan tidak dalam keadaan bootloop.</li>
+            <li>PC Anda memiliki driver Mi USB dan alat platform yang diperlukan.</li>
+            <li>Anda berada di ROM MIUI resmi dan memiliki akun Xiaomi.</li>
+            <li>Anda telah memasukkan Kartu SIM ke perangkat Anda dan dapat menghubungkannya ke internet menggunakan data seluler.</li>
+        </ul>
+        <h4 style="color: red;">Cara Unlock Bootloader</h4>
+        <p class="fw-bold">Langkah 1: Perangkat</p>
+        <ul class="fw-light">
+            <li>Buka Pengaturan > Tentang ponsel > Versi MIUI.</li>
+            <li>Ketuk berulang kali pada versi MIUI sampai Anda melihat pop-up <i>Anda sekarang menjadi pengembang!</i></li>
+            <li>Kembali ke Pengaturan, klik Pengaturan tambahan, lalu Opsi pengembang.</a></li>   
+            <li>Aktifkan pembukaan kunci OEM dan debugging USB.</li>
+            <li>Kaitkan akun Xiaomi Anda ke ponsel Anda. Ketuk Mi Buka kunci status > Setuju > Tambahkan akun dan perangkat. Pastikan perangkat Anda dapat terhubung ke internet menggunakan data seluler.</li>
+            <li>Setelah akun berhasil dikaitkan, Anda akan mendapatkan pesan Ditambahkan berhasil. Akun Mi dikaitkan dengan perangkat ini sekarang.</li>
+            <li>Kemudian matikan ponsel Anda, tekan dan tahan tombol Volume Turun dan tombol Daya untuk masuk ke mode Fastboot.</li>
+            <li>Hubungkan ponsel Anda ke PC menggunakan kabel USB.</li>
+        </ul>
+        <p class="fw-bold">Langkah 2:</p>
+        <ul class="fw-light">
+            <li>Unduh dan jalankan Mi Unlock di PC Anda dan masuk ke akun Xiaomi Anda (Email/Telepon/Akun Xiaomi dan Kata Sandi). Pastikan ponsel Anda dalam mode Fastboot dan terhubung ke PC.</li>
+            <li>Server akan memeriksa apakah akun Xiaomi terikat ke ponsel Anda atau tidak.</li>
+            <li>Anda telah melakukannya di telepon, jadi Anda harus mendapatkan pesan akan "Terhubung dengan perangkat" Jika Anda mendapatkan pesan "Tidak terhubung dengan perangkat", instal ulang driver Mi USB dan coba lagi.</li>
+            <li>Klik Buka Unlock > Unlock anyway. Pada upaya pertama Anda, Mi Unlock akan mem-flash pesan Tidak dapat dibuka. Harap buka kunci 168 jam kemudian. Ikuti timer untuk membuka kunci dengan sukses.</li>
+            <li>Setelah masa tunggu selesai, gunakan Mi Unlock dan klik Unlock > Unlock anyway lagi. Ini kemudian akan membuka kunci bootloader ponsel Anda.</li>
+            <li>Setelah bootloader dibuka kuncinya, ponsel Anda akan reboot secara otomatis. Jika tidak, klik Reboot phone.</li>
+        </ul>
+        <p>
+            Download Mi Unlock Tools
+            <br>
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#linkmiunlock">
+              Download
+            </button>
+          </p>
+          <p class="fw-bold">Catatan:</p>
+          <ul class="fw-light">
+              <li>Bagi mereka yang mengalami kerusakan pada ponsel mereka, kunjungi pusat layanan terdekat untuk memperbaiki ponsel Anda. Anda tidak dapat menambahkan akun Xiaomi di Pengaturan jika perangkat dalam keadaan bootloop, brick, softbrick</li>
+              <li>Anda tidak perlu mengisi formulir aplikasi apa pun untuk membuka kunci ponsel Xiaomi Anda.</li>
+              <li>Ikuti timer yang ditunjukkan di Mi Unlock untuk membuka kunci dengan sukses. Masa tunggu dapat bervariasi dari orang ke orang.</li>
+              <li>Setelah mengikat akun Xiaomi Anda ke ponsel Anda, jangan reset pabrik / keluar dari akun. Jika tidak, timer akan direset menjadi 168 jam.</li>
+              <li class="text-danger">Membuka kunci bootloader akan menghapus semua data, cadangan sebelum membuka kunci</li>
+              <li class="text-danger">Gunakan telepon Anda secara normal selama masa tunggu.</li>
+              <li>Gunakan PC lain (64-bit) untuk membuka kunci jika Mi Unlock gagal mendeteksi perangkat Anda / kesalahan tidak dikenal.</li>
+              <li class="text-danger">Jika Anda membuka kunci bootloader, garansi ponsel Anda akan hilang/hangus.</li>
+              <li class="text-danger">Anda hanya dapat membuka Bootloader 1 perangkat dalam 30 hari dan 4 perangkat dalam satu tahun.</li>
+          </ul>
+      </div>
+    </div>
+   <!--first layout end-->
+
+   <!--start modal-->
+    <div class="modal fade" id="linkmiunlock" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="linkmiunlockLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="linkmiunlockLabel">Download</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Ini akan mengarahkan ke link download..
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+            <a href="https://drive.google.com/uc?id=1fhmSMT3a7C8j7LyADSxTcQQf2YTqDuHn&export=download" target="_blank" class="btn btn-danger">Download</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end modal-->
+
+  <!--footer start-->
+  <footer class="py-3 mt-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="../../" class="nav-link px-2 text-muted">Beranda</a></li>
+      <li class="nav-item"><a href="../../faq/" class="nav-link px-2 text-muted">Bantuan</a></li>
+      <li class="nav-item"><a href="../../about/" class="nav-link px-2 text-muted">Tentang Kami</a></li>
+    </ul>
+    <p class="text-center text-muted">&copy; 2022, Ginkgo's Port</p>
+  </footer>
+  <!--footer end-->
+    </div>
+    
+   <script src="../../assets/js/bootstrap.bundle.js"></script>
+</body>
+</html>

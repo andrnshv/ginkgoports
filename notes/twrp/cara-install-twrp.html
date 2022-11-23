@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="../../assets/css/all.min.css">
+    <link type="text/css" rel="stylesheet" href="../../assets/css/footer.css">
+    <title>Ginkgo's Port - Cara Install TWRP</title>
+</head>
+<body>
+     <!--nav sections start-->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark text-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><span style="color: red;">Ginkgo's</span> Port</a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../../">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../releases.html">Menu</a></li></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Lainnya
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../../faq">Bantuan</a></li>
+                <li><a class="dropdown-item" href="../../about">Tentang Kami</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--nav sections end-->
+    
+    <!--first layout start-->
+    <div class="container">
+      <div class="row mt-4 align-items-center text-center">
+          <div class="col-12">
+              <h2>Cara Install <span style="color: red;">Recovery Kustom TWRP</span></h2>
+              <img src="../../assets/pict/twrpginkgo.jpg" alt="" class="img-fluid" style="width: 35rem;">
+          </div>
+      </div>
+      <div class="mt-4 row">
+        <p class="fw-bold text-danger">1. Hal Yang Harus Diperhatikan</p>
+        <ul class="fw-light text-danger">
+            <li>"Do with your own risk!" penulis tidak bertanggung jawab atas kerusakan yang terjadi akibat proses rooting smartphone.</li>
+            <li>Backup data Anda terlebih dahulu.</li>
+            <li>Perangkat Android dalam kondisi Unlocked Bootloader.</li>
+        </ul>
+        <p class="fw-bold">2. File dan Environment yang harus disiapkan</p>
+        <ul class="fw-light">
+            <li>Siapkan PC atau Laptop</li>
+            <li>Pastikan PC/Laptop terinstall Minimal ADB Fastboot</li>
+            <li>TWRP yang telah didownload</a></li>
+        
+            <p class="fw-normal">
+              Download TWRP 3.7.0_12-0-ginkgo.img
+              <br>
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#linktwrp">
+                Download
+              </button>
+            </p>
+        
+            <li>Disable Force Encrypt</li>
+            <li>(Opsional) Magisk v25.2</li>
+        </ul>
+        <p class="fw-bold">3. Langkah untuk install TWRP</p>
+        <ul class="fw-light">
+            <li>Masuk mode fastboot dengan menekan tombol Volume Down + Power dari keadaan mati, tahan selama 5 detik hingga muncul logo fastboot.</li>
+            <li>Jalankan Minimal ADB and Fastboot yang telah terinstal pada PC/Laptop dengan klik kanan run as administrator pada file cmd-here.exe. lalu sambungkan device via usb cable.</li>
+            <li>Flash Recovery: jalankan kode dibawah ini, (sesuaikan nama file twrp dengan yang ada, seperti nama twrp-3.7.0_12-0-ginkgo.img)
+                <div class="card">
+                    <div class="card-body fw-bold">
+                        fastboot devices
+                    </div>
+                  </div>
+                   lakukan flash
+                  <div class="card">
+                    <div class="card-body fw-bold">
+                        fastboot flash recovery twrp-3.7.0_12-0-ginkgo.img
+                    </div>
+                  </div>
+                  setelah selesai masuk ke Mode Recovery dengan <span class="fw-bold">menekan dan tahan tombol power dan volume atas secara bersamaan hingga boot</span> atau dengan cara ketik dibawah ini di ADB
+                  <div class="card">
+                    <div class="card-body fw-bold">
+                        fastboot boot twrp-3.7.0_12-0-ginkgo.img
+                    </div>
+                  </div>
+                  Jika masuk recovery geser ke kanan <i>swipe to allow modification</i>
+                  dan ketuk tombol <i>wipe -> format</i>, ketik "yes" lalu confirm. proses ini akan menghapus semua data perangkat anda agar memori internal tidak terenkripsi. Pastikan jangan lupa backup data pribadi.
+            </li>
+            <li>(Opsional) Flash Magisk untuk Root Perangkat, copy file magisk-Vxx.x.zip ke internal storage. lalu install pada file magisk-Vxx.x.zip, Kemudian Swipe to confirm flash . tunggu sebentar lalu selesai.</li>
+            <li> Flash Disable Force Encrypt</li>
+            <li>Reboot -> Reboot to system</li>
+        </ul>
+        <p class="fw-light">Langkah - langkah install twrp berhasil</p>
+      </div>
+    </div>
+    
+    
+   <!--first layout end-->
+
+  <!--start modal-->
+  <div class="modal fade" id="linktwrp" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="linktwrpLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="linktwrpLabel">Download</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Ini akan mengarahkan ke link download..
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+          <a href="https://drive.google.com/uc?id=1rnKwG0CdYorCKqyQvFJgQJD4X5tAc_fu&export=download" target="_blank" class="btn btn-danger">Download</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end modal-->
+   
+  <!--footer start-->
+  <footer class="py-3 mt-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="../../" class="nav-link px-2 text-muted">Beranda</a></li>
+      <li class="nav-item"><a href="../../faq/" class="nav-link px-2 text-muted">Bantuan</a></li>
+      <li class="nav-item"><a href="../../about/" class="nav-link px-2 text-muted">Tentang Kami</a></li>
+    </ul>
+    <p class="text-center text-muted">&copy; 2022, Ginkgo's Port</p>
+  </footer>
+  <!--footer end-->
+    </div>
+    
+   <script src="../../assets/js/bootstrap.bundle.js"></script>
+</body>
+</html>

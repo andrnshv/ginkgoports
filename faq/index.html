@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="../assets/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="../assets/css/footer.css">
+    <title>Ginkgo's Port | Bantuan</title>
+</head>
+<body>
+  <!--nav sections start-->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark text-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><span style="color: red;">Ginkgo's</span> Port</a>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../notes/releases.html">Menu</a></li></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Lainnya
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item active" href="index.html">Bantuan</a></li>
+              <li><a class="dropdown-item" href="../about">Tentang Kami</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--nav sections end-->
+  
+<!--first layout start-->
+  <div class="container mt-4 text-light">
+    <div class="card bg-danger">
+      <div class="card-body">
+        <h1 class="text-center fw-bold">Bantuan</h1>
+        <p class="fw-light">Ringkasan pernyataan dan beberapa pertanyaan yang mungkin bermanfaat bagi pengguna.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container text-dark">
+    <div class="card mt-3">
+      <div class="card-body">
+        <h5>Pemberitahuan</h5>
+        <p>Sebelum menggunakan, beberapa hal yang perlu diketahui jika:</p>
+        <ul>
+          <li>Pengguna sepenuhnya berisiko untuk perangkatnya.</li>
+          <li>Perangkat harus berhasil Membuka Kunci Bootloader (UBL) untuk mengakses Pemulihan.</li>
+          <li>Garansi resmi yang ada akan hilang karena unlock bootloader (UBL).</li>
+          <li>Data dalam perangkat akan terhapus total jika Anda berhasil membuka kunci bootloader, jadi pastikan untuk mencadangkan data penting terlebih dahulu.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card mt-3">
+      <div class="card-body">
+        <h5 style="color:red;">Peringatan!</h5>
+        <p>Setiap Custom ROM tidak menjamin bahwa perangkat Anda akan berjalan dengan sempurna tanpa bug, namun para maintainer Custom ROM tetap berusaha keras untuk menciptakan ROM yang terbaik untuk setiap perangkat. Oleh karena itu, maintainer memerlukan laporan bug/isu yang tertera pada ROM agar bisa ditangani secepatnya pada Update ROM tersebut.</p>
+      </div>
+    </div>
+    <div class="card mt-3">
+      <div class="card-body">
+        <h5>Syarat Pemasangan</h5>
+        <p>Karena ROM yang digunakan tidak sama dengan yang lain, maka pemasangan ROM harus disesuakan dengan perangkat masing-masing. Untuk saat ini hanya ditujukan untuk perangkat Redmi Note 8 (Ginkgo).</p>
+        <p>Namun, secara umum, ada beberapa hal umum yang perlu diketahui, seperti:</p>
+        <ul>
+          <li>Pastikan perangkat telah berhasil Unlock Bootloader (UBL)</li>
+          <li>Flash/Instal File Recovery seperti TWRP, OrangeFox Recovery, dll melalui terminal di komputer/laptop Anda</li>
+          <li>File Custom ROM yang akan digunakan.</li>
+          <li>(Opsional) File Magisk dan DFE</li>
+        </ul>
+      </div>
+    </div>
+    
+
+    <div class="mt-3 accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Apa tujuan dari Custom ROM ini?
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Tujuan dari Custom ROM ini adalah bagi pengguna yang merasa ingin membutuhkan kinerja yang sangat baik, lebih ringan daripada ROM bawaan perangkat, dengan fitur lebih minimalis hingga fitur yang beragam namun tanpa adanya bloatware.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed fw-bold type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Apakah Custom ROM aman digunakan?
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Custom ROM umumnya aman digunakan karena bersumber dari AOSP (Android Open Source Project). Keamanan bisa beresiko jika pengguna mengizinkan akses root dan memasang modul root yang tidak jelas.<i class="ri-football-fill"></i></div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button class="accordion-button collapsed fw-bold type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Bagaimana cara melaporkan bug/isu pada ROM?
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Pengguna dapat melaporkan bug pada forum telegram Redmi Note 8 Indonesia <a href="../about/index.html#forum">disini</a>. Jangan lupa untuk memberikan informasi dan lampiran foto atau bentuk screenshot hingga logcat saat melapor.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--first layout end-->
+
+  <!--footer start-->
+  <footer class="py-3 mt-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="../" class="nav-link px-2 text-muted">Beranda</a></li>
+      <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Bantuan</a></li>
+      <li class="nav-item"><a href="../about/" class="nav-link px-2 text-muted">Tentang Kami</a></li>
+    </ul>
+    <p class="text-center text-muted">&copy; 2022, Ginkgo's Port</p>
+  </footer>
+  <!--footer end-->
+    </div>
+  
+
+    <script src="../assets/js/bootstrap.bundle.js"></script>
+    <script src="../assets/js/jquery.min.js"></script>
+</body>
+</html>
